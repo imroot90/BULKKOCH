@@ -1,0 +1,89 @@
+/* html {
+    font-family: 'Koulen', cursive;
+} */
+/* 전체 바디에 관련된 CSS */
+body {
+    margin: 0;
+    background-color: rgba(193, 235, 248, 0.753);
+}
+/* 헤더에 대한 CSS */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(187, 53, 53, 0.986);
+    height: 124px;
+    align-items: center;
+}
+/* 링크에 대한 CSS */
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* 로고 */
+#navbar__logo {
+    font-family: 'Koulen', cursive;
+    
+    display: flex;
+    margin: 30px 10px 30px 30px;
+    font-size: 25px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.name {
+    margin: 10px;
+    font-size: 30px;
+}
+
+/* 메뉴 */
+.navbar__menu {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 18px
+}
+.navbar__menu ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+}
+.navbar__menu li {
+    width: 120px;
+    height: 50px;
+    padding: 30px;
+    margin: 0;
+
+
+}
+.navbar__menu li:hover {
+    background-color: rgba(58, 13, 5, 0.226);
+    border-radius: 8px;
+    border: 5px;
+    border-color: rgba(19, 2, 2, 0.205);
+    border-bottom-style: solid;
+
+    transition : 0.5s;
+    transform: scale(1,1.11);
+
+    /* background-color : rgb(50,50,255); */
+    /* color : white; */
+    /* transition : 2s; */
+}
+
+/* 공유 아이콘 */
+.navbar__sharing ul {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 0;
+    margin: 30px 30px 30px 10px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px
+}
+.navbar__sharing li {
+    justify-content:space-between;
+    padding-left: 20px;
+} 
+
