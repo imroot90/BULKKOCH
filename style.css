@@ -1,5 +1,4 @@
-/* html {
-    font-family: 'Koulen', cursive;
+/* html {font-family: 'Koulen', cursive;
 } */
 /* 전체 바디에 관련된 CSS */
 body {
@@ -10,8 +9,8 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(187, 53, 53, 0.986);
-    height: 124px;
+    background-color: rgba(34, 165, 182, 0.986);
+    height: 130px;
     align-items: center;
 }
 /* 링크에 대한 CSS */
@@ -25,8 +24,10 @@ a {
     font-family: 'Koulen', cursive;
     
     display: flex;
-    margin: 30px 10px 30px 30px;
-    font-size: 25px;
+    height: 130px;
+    margin: 0px;
+    padding: 0 20px;
+    font-size: 20px;
     align-items: center;
     color: rgb(255, 255, 255);
 }
@@ -38,10 +39,12 @@ a {
 /* 메뉴 */
 .navbar__menu {
     font-family: 'Sunflower', sans-serif;
-    font-size: 18px
+    font-size: 18px;
+    /* height: 130px; */
 }
 .navbar__menu ul {
     display: flex;
+    height: 100%;
     justify-content: space-between;
     padding: 0;
     margin: 0;
@@ -50,15 +53,20 @@ a {
     /* background-color: rgb(255, 255, 255); */
 }
 .navbar__menu li {
+    /* background-color: rgba(0, 0, 0, 0); */
+    /* border-left: 1px solid;
+    border-right: 1px solid; */
+    
     width: 120px;
     height: 50px;
     padding: 30px;
-    margin: 0;
+    margin-left: 2px;
+    border-radius: 8px;
 
 
 }
 .navbar__menu li:hover {
-    background-color: rgba(58, 13, 5, 0.226);
+    background-color: rgba(10, 8, 110, 0.336);
     border-radius: 8px;
     border: 5px;
     border-color: rgba(19, 2, 2, 0.205);
@@ -76,14 +84,43 @@ a {
 .navbar__sharing ul {
     display: flex;
     /* flex-direction: column; */
-    padding: 0;
+    padding: 15px;
     margin: 30px 30px 30px 10px;
     list-style: none;
     color: rgb(255, 255, 255);
-    font-size: 40px
+    font-size: 30px
 }
 .navbar__sharing li {
     justify-content:space-between;
     padding-left: 20px;
 } 
 
+/* 미디어쿼리 적용(반응형 웹) */
+@media screen and (max-width:1620px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 130px;
+    
+    }
+
+    .navbar__menu {
+        /* background-color: aqua; */
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+        background-color: rgba(34, 165, 182, 0.986);
+        
+    }
+
+    .navbar__menu li {
+        /* background-color: rgba(19, 2, 2, 0.205); */
+        padding: 10px;
+        width: 100vh;
+        height: 70px;
+        justify-content: center;
+    }
+
+}
